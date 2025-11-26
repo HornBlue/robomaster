@@ -1,0 +1,33 @@
+[0.009s] Invoking command in '/home/carrot/Vision_Arena_2025/build/player_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/carrot/Vision_Arena_2025/build/player_pkg -- -j2 -l2
+[0.049s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.138s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.156s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.158s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.162s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.168s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.176s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.198s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.199s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.277s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.305s] -- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[0.354s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[0.355s]   By not providing "Findpose_msg.cmake" in CMAKE_MODULE_PATH this project has
+[0.355s]   asked CMake to find a package configuration file provided by "pose_msg",
+[0.355s]   but CMake did not find one.
+[0.355s] 
+[0.355s]   Could not find a package configuration file provided by "pose_msg" with any
+[0.355s]   of the following names:
+[0.355s] 
+[0.355s]     pose_msgConfig.cmake
+[0.355s]     pose_msg-config.cmake
+[0.355s] 
+[0.355s]   Add the installation prefix of "pose_msg" to CMAKE_PREFIX_PATH or set
+[0.355s]   "pose_msg_DIR" to a directory containing one of the above files.  If
+[0.355s]   "pose_msg" provides a separate development package or SDK, be sure it has
+[0.355s]   been installed.
+[0.355s] 
+[0.355s] [0m
+[0.355s] -- Configuring incomplete, errors occurred!
+[0.355s] See also "/home/carrot/Vision_Arena_2025/build/player_pkg/CMakeFiles/CMakeOutput.log".
+[0.363s] gmake: *** [Makefile:267：cmake_check_build_system] 错误 1
+[0.366s] Invoked command in '/home/carrot/Vision_Arena_2025/build/player_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/carrot/Vision_Arena_2025/build/player_pkg -- -j2 -l2

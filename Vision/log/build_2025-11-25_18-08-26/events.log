@@ -1,0 +1,149 @@
+[0.000000] (-) TimerEvent: {}
+[0.002229] (player_pkg) JobQueued: {'identifier': 'player_pkg', 'dependencies': OrderedDict()}
+[0.002458] (player_pkg) JobStarted: {'identifier': 'player_pkg'}
+[0.054397] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'cmake'}
+[0.057615] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'build'}
+[0.057663] (player_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/carrot/Vision_Arena_2025/build/player_pkg', '--', '-j2', '-l2'], 'cwd': '/home/carrot/Vision_Arena_2025/build/player_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'carrot'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/carrot/Vision_Arena_2025/install/target_model_pkg/lib:/home/carrot/Vision_Arena_2025/install/stop/lib:/home/carrot/Vision_Arena_2025/install/sin/lib:/home/carrot/Vision_Arena_2025/install/rm_run/lib:/home/carrot/Vision_Arena_2025/install/rect_move/lib:/home/carrot/Vision_Arena_2025/install/circle/lib:/home/carrot/Vision_Arena_2025/install/arrow_run/lib:/home/carrot/Vision_Arena_2025/install/referee_pkg/lib:/home/carrot/Vision_Arena_2025/install/camera/lib:/home/carrot/Vision_Arena_2025/install/pose_msg/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/carrot'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.104.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1945'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=542fd0d6e7028384aa72cad269256626'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/carrot/Vision_Arena_2025/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'carrot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'carrot'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/carrot-VM:@/tmp/.ICE-unix/1945,unix/carrot-VM:/tmp/.ICE-unix/1945'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5b0a82a4_49e3_4d35_ab8f_e1f3a81c2de1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AGZVG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8b1fb91964.sock'), ('GNOME_TERMINAL_SERVICE', ':1.158'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/carrot/Vision_Arena_2025/install/target_model_pkg:/home/carrot/Vision_Arena_2025/install/stop:/home/carrot/Vision_Arena_2025/install/sin:/home/carrot/Vision_Arena_2025/install/rm_run:/home/carrot/Vision_Arena_2025/install/rect_move:/home/carrot/Vision_Arena_2025/install/player_pkg:/home/carrot/Vision_Arena_2025/install/circle:/home/carrot/Vision_Arena_2025/install/arrow_run:/home/carrot/Vision_Arena_2025/install/referee_pkg:/home/carrot/Vision_Arena_2025/install/camera:/home/carrot/Vision_Arena_2025/install/pose_msg:/home/carrot/Vision_Arena_2025/install/camera_sim_pkg:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/carrot/Vision_Arena_2025/build/player_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=542fd0d6e7028384aa72cad269256626'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/carrot/Vision_Arena_2025/install/referee_pkg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/carrot/Vision_Arena_2025/install/target_model_pkg:/home/carrot/Vision_Arena_2025/install/stop:/home/carrot/Vision_Arena_2025/install/sin:/home/carrot/Vision_Arena_2025/install/rm_run:/home/carrot/Vision_Arena_2025/install/rect_move:/home/carrot/Vision_Arena_2025/install/player_pkg:/home/carrot/Vision_Arena_2025/install/circle:/home/carrot/Vision_Arena_2025/install/arrow_run:/home/carrot/Vision_Arena_2025/install/referee_pkg:/home/carrot/Vision_Arena_2025/install/camera:/home/carrot/Vision_Arena_2025/install/pose_msg:/home/carrot/Vision_Arena_2025/install/camera_sim_pkg:/opt/ros/humble')]), 'shell': False}
+[0.103103] (-) TimerEvent: {}
+[0.208412] (-) TimerEvent: {}
+[0.311028] (-) TimerEvent: {}
+[0.417247] (-) TimerEvent: {}
+[0.520651] (-) TimerEvent: {}
+[0.561349] (player_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target TestNode\x1b[0m\n'}
+[0.602962] (player_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/TestNode.dir/src/test.cpp.o\x1b[0m\n'}
+[0.620973] (-) TimerEvent: {}
+[0.722280] (-) TimerEvent: {}
+[0.829853] (-) TimerEvent: {}
+[0.931290] (-) TimerEvent: {}
+[1.035127] (-) TimerEvent: {}
+[1.137835] (-) TimerEvent: {}
+[1.241837] (-) TimerEvent: {}
+[1.342748] (-) TimerEvent: {}
+[1.445029] (-) TimerEvent: {}
+[1.546331] (-) TimerEvent: {}
+[1.647644] (-) TimerEvent: {}
+[1.748341] (-) TimerEvent: {}
+[1.849352] (-) TimerEvent: {}
+[1.953503] (-) TimerEvent: {}
+[2.057243] (-) TimerEvent: {}
+[2.158902] (-) TimerEvent: {}
+[2.260710] (-) TimerEvent: {}
+[2.363891] (-) TimerEvent: {}
+[2.475459] (-) TimerEvent: {}
+[2.576600] (-) TimerEvent: {}
+[2.679185] (-) TimerEvent: {}
+[2.784734] (-) TimerEvent: {}
+[2.888496] (-) TimerEvent: {}
+[2.990093] (-) TimerEvent: {}
+[3.095033] (-) TimerEvent: {}
+[3.195761] (-) TimerEvent: {}
+[3.298434] (-) TimerEvent: {}
+[3.403691] (-) TimerEvent: {}
+[3.504137] (-) TimerEvent: {}
+[3.604823] (-) TimerEvent: {}
+[3.705876] (-) TimerEvent: {}
+[3.807730] (-) TimerEvent: {}
+[3.910464] (-) TimerEvent: {}
+[4.012446] (-) TimerEvent: {}
+[4.113193] (-) TimerEvent: {}
+[4.216519] (-) TimerEvent: {}
+[4.317316] (-) TimerEvent: {}
+[4.419216] (-) TimerEvent: {}
+[4.522875] (-) TimerEvent: {}
+[4.624906] (-) TimerEvent: {}
+[4.725998] (-) TimerEvent: {}
+[4.826599] (-) TimerEvent: {}
+[4.927942] (-) TimerEvent: {}
+[5.034152] (-) TimerEvent: {}
+[5.136363] (-) TimerEvent: {}
+[5.237222] (-) TimerEvent: {}
+[5.341190] (-) TimerEvent: {}
+[5.441985] (-) TimerEvent: {}
+[5.543010] (-) TimerEvent: {}
+[5.645559] (-) TimerEvent: {}
+[5.750795] (-) TimerEvent: {}
+[5.852190] (-) TimerEvent: {}
+[5.954425] (-) TimerEvent: {}
+[6.057897] (-) TimerEvent: {}
+[6.158977] (-) TimerEvent: {}
+[6.268969] (-) TimerEvent: {}
+[6.369436] (-) TimerEvent: {}
+[6.471252] (-) TimerEvent: {}
+[6.574142] (-) TimerEvent: {}
+[6.674979] (-) TimerEvent: {}
+[6.776260] (-) TimerEvent: {}
+[6.879299] (-) TimerEvent: {}
+[6.980690] (-) TimerEvent: {}
+[7.082724] (-) TimerEvent: {}
+[7.183939] (-) TimerEvent: {}
+[7.284689] (-) TimerEvent: {}
+[7.385036] (-) TimerEvent: {}
+[7.489832] (-) TimerEvent: {}
+[7.598041] (-) TimerEvent: {}
+[7.698401] (-) TimerEvent: {}
+[7.800941] (-) TimerEvent: {}
+[7.901639] (-) TimerEvent: {}
+[8.002982] (-) TimerEvent: {}
+[8.103941] (-) TimerEvent: {}
+[8.205121] (-) TimerEvent: {}
+[8.307210] (-) TimerEvent: {}
+[8.407667] (-) TimerEvent: {}
+[8.508367] (-) TimerEvent: {}
+[8.608678] (-) TimerEvent: {}
+[8.709472] (-) TimerEvent: {}
+[8.811316] (-) TimerEvent: {}
+[8.912861] (-) TimerEvent: {}
+[9.015116] (-) TimerEvent: {}
+[9.117767] (-) TimerEvent: {}
+[9.219260] (-) TimerEvent: {}
+[9.321184] (-) TimerEvent: {}
+[9.423622] (-) TimerEvent: {}
+[9.524022] (-) TimerEvent: {}
+[9.625042] (-) TimerEvent: {}
+[9.635303] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TestNode::callback_camera(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.635719] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:217:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsortRectanglePoints\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[9.635765] (player_pkg) StderrLine: {'line': b'  217 |         std::vector<cv::Point2f> rect_points = \x1b[01;31m\x1b[KsortRectanglePoints\x1b[m\x1b[K(approx);\n'}
+[9.635799] (player_pkg) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.725779] (-) TimerEvent: {}
+[9.826797] (-) TimerEvent: {}
+[9.928245] (-) TimerEvent: {}
+[10.028470] (-) TimerEvent: {}
+[10.131442] (-) TimerEvent: {}
+[10.235475] (-) TimerEvent: {}
+[10.336399] (-) TimerEvent: {}
+[10.437463] (-) TimerEvent: {}
+[10.539654] (-) TimerEvent: {}
+[10.640595] (-) TimerEvent: {}
+[10.741585] (-) TimerEvent: {}
+[10.844387] (-) TimerEvent: {}
+[10.945090] (-) TimerEvent: {}
+[11.046299] (-) TimerEvent: {}
+[11.146733] (-) TimerEvent: {}
+[11.249535] (-) TimerEvent: {}
+[11.353444] (-) TimerEvent: {}
+[11.455239] (-) TimerEvent: {}
+[11.557142] (-) TimerEvent: {}
+[11.661132] (-) TimerEvent: {}
+[11.762923] (-) TimerEvent: {}
+[11.863595] (-) TimerEvent: {}
+[11.964736] (-) TimerEvent: {}
+[12.066750] (-) TimerEvent: {}
+[12.167420] (-) TimerEvent: {}
+[12.270228] (-) TimerEvent: {}
+[12.372496] (-) TimerEvent: {}
+[12.473294] (-) TimerEvent: {}
+[12.573932] (-) TimerEvent: {}
+[12.674878] (-) TimerEvent: {}
+[12.776829] (-) TimerEvent: {}
+[12.877498] (-) TimerEvent: {}
+[12.979831] (-) TimerEvent: {}
+[13.080129] (-) TimerEvent: {}
+[13.183520] (-) TimerEvent: {}
+[13.285660] (-) TimerEvent: {}
+[13.347899] (player_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/TestNode.dir/build.make:76\xef\xbc\x9aCMakeFiles/TestNode.dir/src/test.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[13.348270] (player_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/TestNode.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[13.348700] (player_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[13.351836] (player_pkg) CommandEnded: {'returncode': 2}
+[13.381075] (player_pkg) JobEnded: {'identifier': 'player_pkg', 'rc': 2}
+[13.386561] (-) TimerEvent: {}
+[13.393710] (-) EventReactorShutdown: {}

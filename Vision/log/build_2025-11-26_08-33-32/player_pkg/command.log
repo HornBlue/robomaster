@@ -1,0 +1,4 @@
+Invoking command in '/home/carrot/Vision_Arena_2025/build/player_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/carrot/Vision_Arena_2025/build/player_pkg -- -j2 -l2
+Invoked command in '/home/carrot/Vision_Arena_2025/build/player_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/carrot/Vision_Arena_2025/build/player_pkg -- -j2 -l2
+Invoking command in '/home/carrot/Vision_Arena_2025/build/player_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/carrot/Vision_Arena_2025/build/player_pkg
+Invoked command in '/home/carrot/Vision_Arena_2025/build/player_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/carrot/Vision_Arena_2025/build/player_pkg

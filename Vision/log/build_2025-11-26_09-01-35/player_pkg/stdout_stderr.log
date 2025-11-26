@@ -1,0 +1,34 @@
+[35m[1mConsolidate compiler generated dependencies of target TestNode[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/TestNode.dir/src/test.cpp.o[0m
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:65:10:[m[K [01;31m[Kerror: [m[K‘[01m[KDetectedObject[m[K’ was not declared in this scope
+   65 |   vector<[01;31m[KDetectedObject[m[K> detected_objects_;  // 替换原来的 Point_V
+      |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:65:24:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   65 |   vector<DetectedObject[01;31m[K>[m[K detected_objects_;  // 替换原来的 Point_V
+      |                        [01;31m[K^[m[K
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:65:24:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:[m[K In member function ‘[01m[Kvoid TestNode::detectSpheres(const cv::Mat&, cv::Mat&)[m[K’:
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:171:27:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[K((TestNode*)this)->TestNode::detected_objects_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  171 |         detected_objects_.[01;31m[Kpush_back[m[K(sphere_obj);
+      |                           [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:[m[K In member function ‘[01m[Kvoid TestNode::detectGreenRectangles(const cv::Mat&, cv::Mat&)[m[K’:
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:258:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ksphere_points[m[K’ was not declared in this scope
+  258 |         rectangle_obj.corners = [01;31m[Ksphere_points[m[K;
+      |                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:261:27:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[K((TestNode*)this)->TestNode::detected_objects_[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  261 |         detected_objects_.[01;31m[Kpush_back[m[K(rectangle_obj);
+      |                           [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:[m[K In member function ‘[01m[Kvoid TestNode::detectArmorPlates(const cv::Mat&, cv::Mat&)[m[K’:
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:319:9:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint_V[m[K’ was not declared in this scope
+  319 |         [01;31m[KPoint_V[m[K.push_back(sorted_armor[i]);
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:[m[K In member function ‘[01m[Kvoid TestNode::callback_camera(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:382:5:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint_V[m[K’ was not declared in this scope
+  382 |     [01;31m[KPoint_V[m[K.clear();
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:423:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kall_targets[m[K’ was not declared in this scope
+  423 |     msg_object.num_objects = [01;31m[Kall_targets[m[K.size();
+      |                              [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/TestNode.dir/build.make:76：CMakeFiles/TestNode.dir/src/test.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/TestNode.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,284 @@
+[0.000000] (-) TimerEvent: {}
+[0.001591] (player_pkg) JobQueued: {'identifier': 'player_pkg', 'dependencies': OrderedDict()}
+[0.001869] (player_pkg) JobStarted: {'identifier': 'player_pkg'}
+[0.042232] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'cmake'}
+[0.043766] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'build'}
+[0.044341] (player_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/carrot/Vision_Arena_2025/build/player_pkg', '--', '-j2', '-l2'], 'cwd': '/home/carrot/Vision_Arena_2025/build/player_pkg', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'carrot'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/carrot/Vision_Arena_2025/install/target_model_pkg/lib:/home/carrot/Vision_Arena_2025/install/stop/lib:/home/carrot/Vision_Arena_2025/install/sin/lib:/home/carrot/Vision_Arena_2025/install/rm_run/lib:/home/carrot/Vision_Arena_2025/install/rect_move/lib:/home/carrot/Vision_Arena_2025/install/circle/lib:/home/carrot/Vision_Arena_2025/install/arrow_run/lib:/home/carrot/Vision_Arena_2025/install/referee_pkg/lib:/home/carrot/Vision_Arena_2025/install/camera/lib:/home/carrot/Vision_Arena_2025/install/pose_msg/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/carrot'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.104.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1961'), ('BUNDLED_DEBUGPY_PATH', '/home/carrot/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=7d0b0db3a47e964585f4a61b69264840'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/carrot/Vision_Arena_2025/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'carrot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'carrot'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/carrot/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/carrot-VM:@/tmp/.ICE-unix/1961,unix/carrot-VM:/tmp/.ICE-unix/1961'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c72618fc_8053_47df_91aa_01d89550c63e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/carrot/.vscode/extensions/ms-python.debugpy-2025.16.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-99e2401bbfc34a8a.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('PYTHONSTARTUP', '/home/carrot/.config/Code/User/workspaceStorage/d628b712de02d263c899d0abe035e490/ms-python.python/pythonrc.py'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.43QDG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8b1fb91964.sock'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/carrot/Vision_Arena_2025/install/target_model_pkg:/home/carrot/Vision_Arena_2025/install/stop:/home/carrot/Vision_Arena_2025/install/sin:/home/carrot/Vision_Arena_2025/install/rm_run:/home/carrot/Vision_Arena_2025/install/rect_move:/home/carrot/Vision_Arena_2025/install/player_pkg:/home/carrot/Vision_Arena_2025/install/circle:/home/carrot/Vision_Arena_2025/install/arrow_run:/home/carrot/Vision_Arena_2025/install/referee_pkg:/home/carrot/Vision_Arena_2025/install/camera:/home/carrot/Vision_Arena_2025/install/pose_msg:/home/carrot/Vision_Arena_2025/install/camera_sim_pkg:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/carrot/Vision_Arena_2025/build/player_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=7d0b0db3a47e964585f4a61b69264840'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/carrot/Vision_Arena_2025/install/referee_pkg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/carrot/Vision_Arena_2025/install/target_model_pkg:/home/carrot/Vision_Arena_2025/install/stop:/home/carrot/Vision_Arena_2025/install/sin:/home/carrot/Vision_Arena_2025/install/rm_run:/home/carrot/Vision_Arena_2025/install/rect_move:/home/carrot/Vision_Arena_2025/install/player_pkg:/home/carrot/Vision_Arena_2025/install/circle:/home/carrot/Vision_Arena_2025/install/arrow_run:/home/carrot/Vision_Arena_2025/install/referee_pkg:/home/carrot/Vision_Arena_2025/install/camera:/home/carrot/Vision_Arena_2025/install/pose_msg:/home/carrot/Vision_Arena_2025/install/camera_sim_pkg:/opt/ros/humble')]), 'shell': False}
+[0.101069] (-) TimerEvent: {}
+[0.202655] (-) TimerEvent: {}
+[0.304923] (-) TimerEvent: {}
+[0.363151] (player_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target TestNode\x1b[0m\n'}
+[0.407864] (-) TimerEvent: {}
+[0.454130] (player_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/TestNode.dir/src/test.cpp.o\x1b[0m\n'}
+[0.508206] (-) TimerEvent: {}
+[0.609849] (-) TimerEvent: {}
+[0.710585] (-) TimerEvent: {}
+[0.812424] (-) TimerEvent: {}
+[0.918449] (-) TimerEvent: {}
+[1.018736] (-) TimerEvent: {}
+[1.119317] (-) TimerEvent: {}
+[1.219819] (-) TimerEvent: {}
+[1.321333] (-) TimerEvent: {}
+[1.422021] (-) TimerEvent: {}
+[1.526463] (-) TimerEvent: {}
+[1.626885] (-) TimerEvent: {}
+[1.729649] (-) TimerEvent: {}
+[1.831586] (-) TimerEvent: {}
+[1.932555] (-) TimerEvent: {}
+[2.036087] (-) TimerEvent: {}
+[2.138494] (-) TimerEvent: {}
+[2.239227] (-) TimerEvent: {}
+[2.341804] (-) TimerEvent: {}
+[2.444280] (-) TimerEvent: {}
+[2.547018] (-) TimerEvent: {}
+[2.653217] (-) TimerEvent: {}
+[2.761742] (-) TimerEvent: {}
+[2.869397] (-) TimerEvent: {}
+[2.970497] (-) TimerEvent: {}
+[3.076331] (-) TimerEvent: {}
+[3.177103] (-) TimerEvent: {}
+[3.277659] (-) TimerEvent: {}
+[3.379890] (-) TimerEvent: {}
+[3.480756] (-) TimerEvent: {}
+[3.583146] (-) TimerEvent: {}
+[3.686174] (-) TimerEvent: {}
+[3.788675] (-) TimerEvent: {}
+[3.890345] (-) TimerEvent: {}
+[3.994290] (-) TimerEvent: {}
+[4.100182] (-) TimerEvent: {}
+[4.204596] (-) TimerEvent: {}
+[4.305181] (-) TimerEvent: {}
+[4.406595] (-) TimerEvent: {}
+[4.507014] (-) TimerEvent: {}
+[4.608754] (-) TimerEvent: {}
+[4.709738] (-) TimerEvent: {}
+[4.812244] (-) TimerEvent: {}
+[4.912746] (-) TimerEvent: {}
+[5.015341] (-) TimerEvent: {}
+[5.117410] (-) TimerEvent: {}
+[5.218337] (-) TimerEvent: {}
+[5.325248] (-) TimerEvent: {}
+[5.426893] (-) TimerEvent: {}
+[5.528177] (-) TimerEvent: {}
+[5.629328] (-) TimerEvent: {}
+[5.735379] (-) TimerEvent: {}
+[5.835924] (-) TimerEvent: {}
+[5.937307] (-) TimerEvent: {}
+[6.038945] (-) TimerEvent: {}
+[6.144997] (-) TimerEvent: {}
+[6.246020] (-) TimerEvent: {}
+[6.349131] (-) TimerEvent: {}
+[6.454694] (-) TimerEvent: {}
+[6.555800] (-) TimerEvent: {}
+[6.657622] (-) TimerEvent: {}
+[6.760298] (-) TimerEvent: {}
+[6.861730] (-) TimerEvent: {}
+[6.966176] (-) TimerEvent: {}
+[7.070549] (-) TimerEvent: {}
+[7.171143] (-) TimerEvent: {}
+[7.271571] (-) TimerEvent: {}
+[7.371861] (-) TimerEvent: {}
+[7.472592] (-) TimerEvent: {}
+[7.574548] (-) TimerEvent: {}
+[7.678423] (-) TimerEvent: {}
+[7.779353] (-) TimerEvent: {}
+[7.881089] (-) TimerEvent: {}
+[7.985713] (-) TimerEvent: {}
+[8.087664] (-) TimerEvent: {}
+[8.189031] (-) TimerEvent: {}
+[8.292145] (-) TimerEvent: {}
+[8.392505] (-) TimerEvent: {}
+[8.493527] (-) TimerEvent: {}
+[8.599265] (-) TimerEvent: {}
+[8.701153] (-) TimerEvent: {}
+[8.805695] (-) TimerEvent: {}
+[8.908521] (-) TimerEvent: {}
+[9.009753] (-) TimerEvent: {}
+[9.114586] (-) TimerEvent: {}
+[9.229119] (-) TimerEvent: {}
+[9.329895] (-) TimerEvent: {}
+[9.430924] (-) TimerEvent: {}
+[9.531778] (-) TimerEvent: {}
+[9.633309] (-) TimerEvent: {}
+[9.733921] (-) TimerEvent: {}
+[9.839332] (-) TimerEvent: {}
+[9.942277] (-) TimerEvent: {}
+[10.043313] (-) TimerEvent: {}
+[10.145206] (-) TimerEvent: {}
+[10.246170] (-) TimerEvent: {}
+[10.377769] (-) TimerEvent: {}
+[10.482664] (-) TimerEvent: {}
+[10.584541] (-) TimerEvent: {}
+[10.693853] (-) TimerEvent: {}
+[10.796429] (-) TimerEvent: {}
+[10.901616] (-) TimerEvent: {}
+[11.004648] (-) TimerEvent: {}
+[11.105108] (-) TimerEvent: {}
+[11.206680] (-) TimerEvent: {}
+[11.310572] (-) TimerEvent: {}
+[11.411000] (-) TimerEvent: {}
+[11.511453] (-) TimerEvent: {}
+[11.627643] (-) TimerEvent: {}
+[11.728014] (-) TimerEvent: {}
+[11.830515] (-) TimerEvent: {}
+[11.938473] (-) TimerEvent: {}
+[12.042564] (-) TimerEvent: {}
+[12.143162] (-) TimerEvent: {}
+[12.245846] (-) TimerEvent: {}
+[12.346866] (-) TimerEvent: {}
+[12.450730] (-) TimerEvent: {}
+[12.551265] (-) TimerEvent: {}
+[12.652235] (-) TimerEvent: {}
+[12.752647] (-) TimerEvent: {}
+[12.853170] (-) TimerEvent: {}
+[12.962702] (-) TimerEvent: {}
+[13.063534] (-) TimerEvent: {}
+[13.164482] (-) TimerEvent: {}
+[13.268255] (-) TimerEvent: {}
+[13.376839] (-) TimerEvent: {}
+[13.487208] (-) TimerEvent: {}
+[13.590566] (-) TimerEvent: {}
+[13.692158] (-) TimerEvent: {}
+[13.792568] (-) TimerEvent: {}
+[13.893181] (-) TimerEvent: {}
+[13.994437] (-) TimerEvent: {}
+[14.094972] (-) TimerEvent: {}
+[14.195567] (-) TimerEvent: {}
+[14.296533] (-) TimerEvent: {}
+[14.399843] (-) TimerEvent: {}
+[14.500608] (-) TimerEvent: {}
+[14.603305] (-) TimerEvent: {}
+[14.704601] (-) TimerEvent: {}
+[14.805205] (-) TimerEvent: {}
+[14.909612] (-) TimerEvent: {}
+[15.017870] (-) TimerEvent: {}
+[15.130919] (-) TimerEvent: {}
+[15.233528] (-) TimerEvent: {}
+[15.335788] (-) TimerEvent: {}
+[15.436728] (-) TimerEvent: {}
+[15.540387] (-) TimerEvent: {}
+[15.641890] (-) TimerEvent: {}
+[15.747491] (-) TimerEvent: {}
+[15.853230] (-) TimerEvent: {}
+[15.964138] (-) TimerEvent: {}
+[16.066664] (-) TimerEvent: {}
+[16.167843] (-) TimerEvent: {}
+[16.269739] (-) TimerEvent: {}
+[16.372635] (-) TimerEvent: {}
+[16.487639] (-) TimerEvent: {}
+[16.600777] (-) TimerEvent: {}
+[16.701293] (-) TimerEvent: {}
+[16.805448] (-) TimerEvent: {}
+[16.908376] (-) TimerEvent: {}
+[17.009780] (-) TimerEvent: {}
+[17.111170] (-) TimerEvent: {}
+[17.213415] (-) TimerEvent: {}
+[17.314144] (-) TimerEvent: {}
+[17.416731] (-) TimerEvent: {}
+[17.519055] (-) TimerEvent: {}
+[17.619930] (-) TimerEvent: {}
+[17.722334] (-) TimerEvent: {}
+[17.824026] (-) TimerEvent: {}
+[17.926493] (-) TimerEvent: {}
+[18.028996] (-) TimerEvent: {}
+[18.131456] (-) TimerEvent: {}
+[18.235298] (-) TimerEvent: {}
+[18.338192] (-) TimerEvent: {}
+[18.439231] (-) TimerEvent: {}
+[18.540678] (-) TimerEvent: {}
+[18.642218] (-) TimerEvent: {}
+[18.743261] (-) TimerEvent: {}
+[18.844704] (-) TimerEvent: {}
+[18.950321] (-) TimerEvent: {}
+[19.057801] (-) TimerEvent: {}
+[19.158645] (-) TimerEvent: {}
+[19.261538] (-) TimerEvent: {}
+[19.362462] (-) TimerEvent: {}
+[19.463090] (-) TimerEvent: {}
+[19.506097] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:65:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDetectedObject\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[19.506306] (player_pkg) StderrLine: {'line': b'   65 |   vector<\x1b[01;31m\x1b[KDetectedObject\x1b[m\x1b[K> detected_objects_;  // \xe6\x9b\xbf\xe6\x8d\xa2\xe5\x8e\x9f\xe6\x9d\xa5\xe7\x9a\x84 Point_V\n'}
+[19.506347] (player_pkg) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.506378] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:65:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[19.506407] (player_pkg) StderrLine: {'line': b'   65 |   vector<DetectedObject\x1b[01;31m\x1b[K>\x1b[m\x1b[K detected_objects_;  // \xe6\x9b\xbf\xe6\x8d\xa2\xe5\x8e\x9f\xe6\x9d\xa5\xe7\x9a\x84 Point_V\n'}
+[19.506433] (player_pkg) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[19.506459] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:65:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[19.560488] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TestNode::detectSpheres(const cv::Mat&, cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.560664] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:171:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kpush_back\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[K((TestNode*)this)->TestNode::detected_objects_\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.560706] (player_pkg) StderrLine: {'line': b'  171 |         detected_objects_.\x1b[01;31m\x1b[Kpush_back\x1b[m\x1b[K(sphere_obj);\n'}
+[19.560810] (player_pkg) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[19.563592] (-) TimerEvent: {}
+[19.583162] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TestNode::detectGreenRectangles(const cv::Mat&, cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.583394] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:258:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksphere_points\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[19.583463] (player_pkg) StderrLine: {'line': b'  258 |         rectangle_obj.corners = \x1b[01;31m\x1b[Ksphere_points\x1b[m\x1b[K;\n'}
+[19.584751] (player_pkg) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.584809] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:261:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kpush_back\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[K((TestNode*)this)->TestNode::detected_objects_\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.584844] (player_pkg) StderrLine: {'line': b'  261 |         detected_objects_.\x1b[01;31m\x1b[Kpush_back\x1b[m\x1b[K(rectangle_obj);\n'}
+[19.584874] (player_pkg) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[19.618721] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TestNode::detectArmorPlates(const cv::Mat&, cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.619874] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:319:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoint_V\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[19.621624] (player_pkg) StderrLine: {'line': b'  319 |         \x1b[01;31m\x1b[KPoint_V\x1b[m\x1b[K.push_back(sorted_armor[i]);\n'}
+[19.621692] (player_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[19.664123] (-) TimerEvent: {}
+[19.665650] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TestNode::callback_camera(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.666013] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:382:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoint_V\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[19.666064] (player_pkg) StderrLine: {'line': b'  382 |     \x1b[01;31m\x1b[KPoint_V\x1b[m\x1b[K.clear();\n'}
+[19.666098] (player_pkg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[19.691348] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:423:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kall_targets\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[19.693960] (player_pkg) StderrLine: {'line': b'  423 |     msg_object.num_objects = \x1b[01;31m\x1b[Kall_targets\x1b[m\x1b[K.size();\n'}
+[19.694243] (player_pkg) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.764646] (-) TimerEvent: {}
+[19.865440] (-) TimerEvent: {}
+[19.967146] (-) TimerEvent: {}
+[20.067448] (-) TimerEvent: {}
+[20.168398] (-) TimerEvent: {}
+[20.269131] (-) TimerEvent: {}
+[20.370021] (-) TimerEvent: {}
+[20.470729] (-) TimerEvent: {}
+[20.571719] (-) TimerEvent: {}
+[20.674521] (-) TimerEvent: {}
+[20.776856] (-) TimerEvent: {}
+[20.877494] (-) TimerEvent: {}
+[20.981569] (-) TimerEvent: {}
+[21.081990] (-) TimerEvent: {}
+[21.183154] (-) TimerEvent: {}
+[21.286058] (-) TimerEvent: {}
+[21.388874] (-) TimerEvent: {}
+[21.491370] (-) TimerEvent: {}
+[21.594006] (-) TimerEvent: {}
+[21.695063] (-) TimerEvent: {}
+[21.799150] (-) TimerEvent: {}
+[21.900456] (-) TimerEvent: {}
+[22.001535] (-) TimerEvent: {}
+[22.102431] (-) TimerEvent: {}
+[22.205597] (-) TimerEvent: {}
+[22.306427] (-) TimerEvent: {}
+[22.407762] (-) TimerEvent: {}
+[22.508610] (-) TimerEvent: {}
+[22.609682] (-) TimerEvent: {}
+[22.710767] (-) TimerEvent: {}
+[22.812212] (-) TimerEvent: {}
+[22.917335] (-) TimerEvent: {}
+[23.018226] (-) TimerEvent: {}
+[23.119504] (-) TimerEvent: {}
+[23.221502] (-) TimerEvent: {}
+[23.322177] (-) TimerEvent: {}
+[23.436722] (-) TimerEvent: {}
+[23.537096] (-) TimerEvent: {}
+[23.639214] (-) TimerEvent: {}
+[23.744600] (-) TimerEvent: {}
+[23.848979] (-) TimerEvent: {}
+[23.963471] (-) TimerEvent: {}
+[24.064941] (-) TimerEvent: {}
+[24.165680] (-) TimerEvent: {}
+[24.267109] (-) TimerEvent: {}
+[24.371121] (-) TimerEvent: {}
+[24.471791] (-) TimerEvent: {}
+[24.573571] (-) TimerEvent: {}
+[24.674777] (-) TimerEvent: {}
+[24.683148] (player_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/TestNode.dir/build.make:76\xef\xbc\x9aCMakeFiles/TestNode.dir/src/test.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[24.685648] (player_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/TestNode.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[24.685728] (player_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[24.742625] (player_pkg) CommandEnded: {'returncode': 2}
+[24.775866] (-) TimerEvent: {}
+[24.802002] (player_pkg) JobEnded: {'identifier': 'player_pkg', 'rc': 2}
+[24.815728] (-) EventReactorShutdown: {}

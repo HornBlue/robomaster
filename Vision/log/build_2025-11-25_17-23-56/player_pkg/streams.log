@@ -1,0 +1,33 @@
+[0.010s] Invoking command in '/home/carrot/Vision_Arena_2025/build/player_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/carrot/Vision_Arena_2025/src/player_pkg -DCMAKE_INSTALL_PREFIX=/home/carrot/Vision_Arena_2025/install/player_pkg
+[0.020s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.103s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.132s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.134s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.141s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.147s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.156s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.175s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.177s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.260s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.289s] -- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[0.326s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.355s] [31mCMake Error at CMakeLists.txt:16 (find_package):
+[0.355s]   By not providing "Findreferee_pkg.cmake" in CMAKE_MODULE_PATH this project
+[0.355s]   has asked CMake to find a package configuration file provided by
+[0.355s]   "referee_pkg", but CMake did not find one.
+[0.355s] 
+[0.355s]   Could not find a package configuration file provided by "referee_pkg" with
+[0.355s]   any of the following names:
+[0.355s] 
+[0.355s]     referee_pkgConfig.cmake
+[0.355s]     referee_pkg-config.cmake
+[0.355s] 
+[0.355s]   Add the installation prefix of "referee_pkg" to CMAKE_PREFIX_PATH or set
+[0.355s]   "referee_pkg_DIR" to a directory containing one of the above files.  If
+[0.355s]   "referee_pkg" provides a separate development package or SDK, be sure it
+[0.355s]   has been installed.
+[0.355s] 
+[0.355s] [0m
+[0.355s] -- Configuring incomplete, errors occurred!
+[0.355s] See also "/home/carrot/Vision_Arena_2025/build/player_pkg/CMakeFiles/CMakeOutput.log".
+[0.362s] Invoked command in '/home/carrot/Vision_Arena_2025/build/player_pkg' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/carrot/Vision_Arena_2025/src/player_pkg -DCMAKE_INSTALL_PREFIX=/home/carrot/Vision_Arena_2025/install/player_pkg

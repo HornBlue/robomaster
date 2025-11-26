@@ -1,0 +1,17 @@
+[31mCMake Error at CMakeLists.txt:16 (find_package):
+  By not providing "Findreferee_pkg.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "referee_pkg", but CMake did not find one.
+
+  Could not find a package configuration file provided by "referee_pkg" with
+  any of the following names:
+
+    referee_pkgConfig.cmake
+    referee_pkg-config.cmake
+
+  Add the installation prefix of "referee_pkg" to CMAKE_PREFIX_PATH or set
+  "referee_pkg_DIR" to a directory containing one of the above files.  If
+  "referee_pkg" provides a separate development package or SDK, be sure it
+  has been installed.
+
+[0m

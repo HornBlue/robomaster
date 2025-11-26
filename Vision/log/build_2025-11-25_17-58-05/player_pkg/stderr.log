@@ -1,0 +1,36 @@
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:[m[K In member function ‘[01m[Kvoid TestNode::callback_camera(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:218:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kcenter[m[K’ was not declared in this scope
+  218 |             calculateStableSpherePoints([01;31m[Kcenter[m[K, radius);
+      |                                         [01;31m[K^~~~~~[m[K
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:218:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kradius[m[K’ was not declared in this scope
+  218 |             calculateStableSpherePoints(center, [01;31m[Kradius[m[K);
+      |                                                 [01;31m[K^~~~~~[m[K
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:219:48:[m[K [01;31m[Kerror: [m[K‘[01m[KsortRectanglePoints[m[K’ was not declared in this scope; did you mean ‘[01m[Krectangle_points[m[K’?
+  219 |         std::vector<cv::Point2f> rect_points = [01;31m[KsortRectanglePoints[m[K(approx);
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                                                [32m[Krectangle_points[m[K
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:236:55:[m[K [01;31m[Kerror: [m[K‘[01m[Krect_colors[m[K’ was not declared in this scope; did you mean ‘[01m[Kpoint_colors[m[K’?
+  236 |           cv::circle(result_image, rect_points[j], 6, [01;31m[Krect_colors[m[K[j], -1);
+      |                                                       [01;31m[K^~~~~~~~~~~[m[K
+      |                                                       [32m[Kpoint_colors[m[K
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:251:29:[m[K [01;31m[Kerror: [m[K‘[01m[K_points[m[K’ was not declared in this scope
+  251 |           Point_V.push_back([01;31m[K_points[m[K[j]);
+      |                             [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:8[m[K:
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:256:23:[m[K [01;31m[Kerror: [m[K‘[01m[Ksphere_points[m[K’ was not declared in this scope; did you mean ‘[01m[Krect_points[m[K’?
+  256 |                       [01;31m[Ksphere_points[m[K[j].x, sphere_points[j].y);
+      |                       [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/TestNode.dir/build.make:76：CMakeFiles/TestNode.dir/src/test.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/TestNode.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

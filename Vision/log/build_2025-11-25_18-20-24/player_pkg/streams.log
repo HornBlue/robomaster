@@ -1,0 +1,12 @@
+[0.020s] Invoking command in '/home/carrot/Vision_Arena_2025/build/player_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/carrot/Vision_Arena_2025/build/player_pkg -- -j2 -l2
+[0.210s] [35m[1mConsolidate compiler generated dependencies of target TestNode[0m
+[0.293s] [ 50%] [32m[1mLinking CXX executable TestNode[0m
+[1.029s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.413
+[1.035s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.413
+[1.835s] /usr/bin/ld: CMakeFiles/TestNode.dir/src/test.cpp.o: in function `TestNode::callback_camera(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >)':
+[1.835s] test.cpp:(.text+0x2b9a): undefined reference to `TestNode::sortRectanglePoints(std::vector<cv::Point_<int>, std::allocator<cv::Point_<int> > > const&)'
+[2.005s] collect2: error: ld returned 1 exit status
+[2.005s] gmake[2]: *** [CMakeFiles/TestNode.dir/build.make:206：TestNode] 错误 1
+[2.006s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/TestNode.dir/all] 错误 2
+[2.006s] gmake: *** [Makefile:146：all] 错误 2
+[2.018s] Invoked command in '/home/carrot/Vision_Arena_2025/build/player_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/carrot/Vision_Arena_2025/build/player_pkg -- -j2 -l2

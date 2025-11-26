@@ -1,0 +1,177 @@
+[0.000000] (-) TimerEvent: {}
+[0.001137] (player_pkg) JobQueued: {'identifier': 'player_pkg', 'dependencies': OrderedDict()}
+[0.001197] (player_pkg) JobStarted: {'identifier': 'player_pkg'}
+[0.045005] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'cmake'}
+[0.052704] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'build'}
+[0.052770] (player_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/carrot/Vision_Arena_2025/build/player_pkg', '--', '-j2', '-l2'], 'cwd': '/home/carrot/Vision_Arena_2025/build/player_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'carrot'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/carrot/Vision_Arena_2025/install/target_model_pkg/lib:/home/carrot/Vision_Arena_2025/install/stop/lib:/home/carrot/Vision_Arena_2025/install/sin/lib:/home/carrot/Vision_Arena_2025/install/rm_run/lib:/home/carrot/Vision_Arena_2025/install/rect_move/lib:/home/carrot/Vision_Arena_2025/install/circle/lib:/home/carrot/Vision_Arena_2025/install/arrow_run/lib:/home/carrot/Vision_Arena_2025/install/referee_pkg/lib:/home/carrot/Vision_Arena_2025/install/camera/lib:/home/carrot/Vision_Arena_2025/install/pose_msg/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/carrot'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.104.3'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1945'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=542fd0d6e7028384aa72cad269256626'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/carrot/Vision_Arena_2025/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'carrot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'carrot'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/carrot-VM:@/tmp/.ICE-unix/1945,unix/carrot-VM:/tmp/.ICE-unix/1945'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5b0a82a4_49e3_4d35_ab8f_e1f3a81c2de1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AGZVG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-8b1fb91964.sock'), ('GNOME_TERMINAL_SERVICE', ':1.158'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/carrot/Vision_Arena_2025/install/target_model_pkg:/home/carrot/Vision_Arena_2025/install/stop:/home/carrot/Vision_Arena_2025/install/sin:/home/carrot/Vision_Arena_2025/install/rm_run:/home/carrot/Vision_Arena_2025/install/rect_move:/home/carrot/Vision_Arena_2025/install/player_pkg:/home/carrot/Vision_Arena_2025/install/circle:/home/carrot/Vision_Arena_2025/install/arrow_run:/home/carrot/Vision_Arena_2025/install/referee_pkg:/home/carrot/Vision_Arena_2025/install/camera:/home/carrot/Vision_Arena_2025/install/pose_msg:/home/carrot/Vision_Arena_2025/install/camera_sim_pkg:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/carrot/Vision_Arena_2025/build/player_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=542fd0d6e7028384aa72cad269256626'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/carrot/Vision_Arena_2025/install/referee_pkg/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/carrot/Vision_Arena_2025/install/target_model_pkg:/home/carrot/Vision_Arena_2025/install/stop:/home/carrot/Vision_Arena_2025/install/sin:/home/carrot/Vision_Arena_2025/install/rm_run:/home/carrot/Vision_Arena_2025/install/rect_move:/home/carrot/Vision_Arena_2025/install/player_pkg:/home/carrot/Vision_Arena_2025/install/circle:/home/carrot/Vision_Arena_2025/install/arrow_run:/home/carrot/Vision_Arena_2025/install/referee_pkg:/home/carrot/Vision_Arena_2025/install/camera:/home/carrot/Vision_Arena_2025/install/pose_msg:/home/carrot/Vision_Arena_2025/install/camera_sim_pkg:/opt/ros/humble')]), 'shell': False}
+[0.101017] (-) TimerEvent: {}
+[0.202855] (-) TimerEvent: {}
+[0.305545] (-) TimerEvent: {}
+[0.408866] (player_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target TestNode\x1b[0m\n'}
+[0.409029] (-) TimerEvent: {}
+[0.454656] (player_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/TestNode.dir/src/test.cpp.o\x1b[0m\n'}
+[0.509866] (-) TimerEvent: {}
+[0.611825] (-) TimerEvent: {}
+[0.712646] (-) TimerEvent: {}
+[0.812897] (-) TimerEvent: {}
+[0.913988] (-) TimerEvent: {}
+[1.015467] (-) TimerEvent: {}
+[1.117368] (-) TimerEvent: {}
+[1.220079] (-) TimerEvent: {}
+[1.321934] (-) TimerEvent: {}
+[1.424629] (-) TimerEvent: {}
+[1.527093] (-) TimerEvent: {}
+[1.627551] (-) TimerEvent: {}
+[1.728413] (-) TimerEvent: {}
+[1.829438] (-) TimerEvent: {}
+[1.931279] (-) TimerEvent: {}
+[2.032565] (-) TimerEvent: {}
+[2.133789] (-) TimerEvent: {}
+[2.235597] (-) TimerEvent: {}
+[2.338420] (-) TimerEvent: {}
+[2.439281] (-) TimerEvent: {}
+[2.540284] (-) TimerEvent: {}
+[2.640948] (-) TimerEvent: {}
+[2.742867] (-) TimerEvent: {}
+[2.844149] (-) TimerEvent: {}
+[2.945867] (-) TimerEvent: {}
+[3.051094] (-) TimerEvent: {}
+[3.151801] (-) TimerEvent: {}
+[3.252723] (-) TimerEvent: {}
+[3.354721] (-) TimerEvent: {}
+[3.459894] (-) TimerEvent: {}
+[3.561774] (-) TimerEvent: {}
+[3.664015] (-) TimerEvent: {}
+[3.766521] (-) TimerEvent: {}
+[3.868545] (-) TimerEvent: {}
+[3.971983] (-) TimerEvent: {}
+[4.074418] (-) TimerEvent: {}
+[4.176455] (-) TimerEvent: {}
+[4.276833] (-) TimerEvent: {}
+[4.378407] (-) TimerEvent: {}
+[4.481134] (-) TimerEvent: {}
+[4.583292] (-) TimerEvent: {}
+[4.683651] (-) TimerEvent: {}
+[4.784744] (-) TimerEvent: {}
+[4.886903] (-) TimerEvent: {}
+[4.989736] (-) TimerEvent: {}
+[5.090309] (-) TimerEvent: {}
+[5.191467] (-) TimerEvent: {}
+[5.293377] (-) TimerEvent: {}
+[5.394421] (-) TimerEvent: {}
+[5.495192] (-) TimerEvent: {}
+[5.596851] (-) TimerEvent: {}
+[5.699441] (-) TimerEvent: {}
+[5.803265] (-) TimerEvent: {}
+[5.904661] (-) TimerEvent: {}
+[6.009531] (-) TimerEvent: {}
+[6.110338] (-) TimerEvent: {}
+[6.212447] (-) TimerEvent: {}
+[6.313341] (-) TimerEvent: {}
+[6.420607] (-) TimerEvent: {}
+[6.521602] (-) TimerEvent: {}
+[6.623681] (-) TimerEvent: {}
+[6.725698] (-) TimerEvent: {}
+[6.827678] (-) TimerEvent: {}
+[6.929330] (-) TimerEvent: {}
+[7.031090] (-) TimerEvent: {}
+[7.132629] (-) TimerEvent: {}
+[7.234675] (-) TimerEvent: {}
+[7.335138] (-) TimerEvent: {}
+[7.435702] (-) TimerEvent: {}
+[7.538938] (-) TimerEvent: {}
+[7.642292] (-) TimerEvent: {}
+[7.745900] (-) TimerEvent: {}
+[7.847687] (-) TimerEvent: {}
+[7.948565] (-) TimerEvent: {}
+[8.050101] (-) TimerEvent: {}
+[8.150458] (-) TimerEvent: {}
+[8.254504] (-) TimerEvent: {}
+[8.355431] (-) TimerEvent: {}
+[8.459870] (-) TimerEvent: {}
+[8.562576] (-) TimerEvent: {}
+[8.663091] (-) TimerEvent: {}
+[8.763799] (-) TimerEvent: {}
+[8.842947] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TestNode::callback_camera(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.843338] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:218:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcenter\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.843506] (player_pkg) StderrLine: {'line': b'  218 |             calculateStableSpherePoints(\x1b[01;31m\x1b[Kcenter\x1b[m\x1b[K, radius);\n'}
+[8.843548] (player_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[8.850020] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:218:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kradius\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.850401] (player_pkg) StderrLine: {'line': b'  218 |             calculateStableSpherePoints(center, \x1b[01;31m\x1b[Kradius\x1b[m\x1b[K);\n'}
+[8.850452] (player_pkg) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[8.860777] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:219:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsortRectanglePoints\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krectangle_points\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.860923] (player_pkg) StderrLine: {'line': b'  219 |         std::vector<cv::Point2f> rect_points = \x1b[01;31m\x1b[KsortRectanglePoints\x1b[m\x1b[K(approx);\n'}
+[8.860965] (player_pkg) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.860999] (player_pkg) StderrLine: {'line': b'      |                                                \x1b[32m\x1b[Krectangle_points\x1b[m\x1b[K\n'}
+[8.865137] (-) TimerEvent: {}
+[8.873455] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:236:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krect_colors\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpoint_colors\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.873673] (player_pkg) StderrLine: {'line': b'  236 |           cv::circle(result_image, rect_points[j], 6, \x1b[01;31m\x1b[Krect_colors\x1b[m\x1b[K[j], -1);\n'}
+[8.873730] (player_pkg) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.873765] (player_pkg) StderrLine: {'line': b'      |                                                       \x1b[32m\x1b[Kpoint_colors\x1b[m\x1b[K\n'}
+[8.892906] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:251:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_points\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[8.893039] (player_pkg) StderrLine: {'line': b'  251 |           Point_V.push_back(\x1b[01;31m\x1b[K_points\x1b[m\x1b[K[j]);\n'}
+[8.894520] (player_pkg) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[8.929219] (player_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[8.929474] (player_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[8.929550] (player_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[8.929626] (player_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[8.929679] (player_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[8.929713] (player_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[8.929747] (player_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[8.929843] (player_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[8.929881] (player_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[8.929912] (player_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[8.929939] (player_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[8.929965] (player_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:8\x1b[m\x1b[K:\n'}
+[8.929992] (player_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:256:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksphere_points\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krect_points\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[8.930030] (player_pkg) StderrLine: {'line': b'  256 |                       \x1b[01;31m\x1b[Ksphere_points\x1b[m\x1b[K[j].x, sphere_points[j].y);\n'}
+[8.930058] (player_pkg) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.965664] (-) TimerEvent: {}
+[9.066764] (-) TimerEvent: {}
+[9.168201] (-) TimerEvent: {}
+[9.269949] (-) TimerEvent: {}
+[9.370881] (-) TimerEvent: {}
+[9.472404] (-) TimerEvent: {}
+[9.573804] (-) TimerEvent: {}
+[9.674821] (-) TimerEvent: {}
+[9.776486] (-) TimerEvent: {}
+[9.877211] (-) TimerEvent: {}
+[9.978078] (-) TimerEvent: {}
+[10.079255] (-) TimerEvent: {}
+[10.190867] (-) TimerEvent: {}
+[10.291889] (-) TimerEvent: {}
+[10.392560] (-) TimerEvent: {}
+[10.493867] (-) TimerEvent: {}
+[10.594800] (-) TimerEvent: {}
+[10.695570] (-) TimerEvent: {}
+[10.796303] (-) TimerEvent: {}
+[10.897356] (-) TimerEvent: {}
+[10.999406] (-) TimerEvent: {}
+[11.100441] (-) TimerEvent: {}
+[11.201052] (-) TimerEvent: {}
+[11.304309] (-) TimerEvent: {}
+[11.405073] (-) TimerEvent: {}
+[11.511905] (-) TimerEvent: {}
+[11.612709] (-) TimerEvent: {}
+[11.713919] (-) TimerEvent: {}
+[11.819413] (-) TimerEvent: {}
+[11.923679] (-) TimerEvent: {}
+[12.025413] (-) TimerEvent: {}
+[12.126029] (-) TimerEvent: {}
+[12.226613] (-) TimerEvent: {}
+[12.327410] (-) TimerEvent: {}
+[12.428805] (-) TimerEvent: {}
+[12.529684] (-) TimerEvent: {}
+[12.630028] (-) TimerEvent: {}
+[12.730924] (-) TimerEvent: {}
+[12.834998] (-) TimerEvent: {}
+[12.935377] (-) TimerEvent: {}
+[13.036043] (-) TimerEvent: {}
+[13.136762] (-) TimerEvent: {}
+[13.189238] (player_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/TestNode.dir/build.make:76\xef\xbc\x9aCMakeFiles/TestNode.dir/src/test.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[13.189390] (player_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/TestNode.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[13.189426] (player_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[13.194204] (player_pkg) CommandEnded: {'returncode': 2}
+[13.230427] (player_pkg) JobEnded: {'identifier': 'player_pkg', 'rc': 2}
+[13.237231] (-) TimerEvent: {}
+[13.241645] (-) EventReactorShutdown: {}

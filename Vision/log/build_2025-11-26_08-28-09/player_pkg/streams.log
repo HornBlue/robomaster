@@ -1,0 +1,27 @@
+[0.024s] Invoking command in '/home/carrot/Vision_Arena_2025/build/player_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/carrot/Vision_Arena_2025/build/player_pkg -- -j2 -l2
+[0.189s] [ 50%] [32mBuilding CXX object CMakeFiles/TestNode.dir/src/test.cpp.o[0m
+[18.040s] [100%] [32m[1mLinking CXX executable TestNode[0m
+[18.741s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.413
+[18.749s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.413
+[19.885s] [100%] Built target TestNode
+[19.909s] Invoked command in '/home/carrot/Vision_Arena_2025/build/player_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/carrot/Vision_Arena_2025/build/player_pkg -- -j2 -l2
+[19.932s] Invoking command in '/home/carrot/Vision_Arena_2025/build/player_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/carrot/Vision_Arena_2025/build/player_pkg
+[19.950s] -- Install configuration: ""
+[19.950s] -- Installing: /home/carrot/Vision_Arena_2025/install/player_pkg/lib/player_pkg/TestNode
+[19.957s] -- Set runtime path of "/home/carrot/Vision_Arena_2025/install/player_pkg/lib/player_pkg/TestNode" to ""
+[19.958s] -- Up-to-date: /home/carrot/Vision_Arena_2025/install/player_pkg/share/ament_index/resource_index/package_run_dependencies/player_pkg
+[19.958s] -- Up-to-date: /home/carrot/Vision_Arena_2025/install/player_pkg/share/ament_index/resource_index/parent_prefix_path/player_pkg
+[19.960s] -- Up-to-date: /home/carrot/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/ament_prefix_path.sh
+[19.962s] -- Up-to-date: /home/carrot/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/ament_prefix_path.dsv
+[19.962s] -- Up-to-date: /home/carrot/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/path.sh
+[19.962s] -- Up-to-date: /home/carrot/Vision_Arena_2025/install/player_pkg/share/player_pkg/environment/path.dsv
+[19.962s] -- Up-to-date: /home/carrot/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.bash
+[19.963s] -- Up-to-date: /home/carrot/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.sh
+[19.963s] -- Up-to-date: /home/carrot/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.zsh
+[19.963s] -- Up-to-date: /home/carrot/Vision_Arena_2025/install/player_pkg/share/player_pkg/local_setup.dsv
+[19.963s] -- Installing: /home/carrot/Vision_Arena_2025/install/player_pkg/share/player_pkg/package.dsv
+[19.963s] -- Up-to-date: /home/carrot/Vision_Arena_2025/install/player_pkg/share/ament_index/resource_index/packages/player_pkg
+[19.965s] -- Up-to-date: /home/carrot/Vision_Arena_2025/install/player_pkg/share/player_pkg/cmake/player_pkgConfig.cmake
+[19.965s] -- Up-to-date: /home/carrot/Vision_Arena_2025/install/player_pkg/share/player_pkg/cmake/player_pkgConfig-version.cmake
+[19.965s] -- Up-to-date: /home/carrot/Vision_Arena_2025/install/player_pkg/share/player_pkg/package.xml
+[19.970s] Invoked command in '/home/carrot/Vision_Arena_2025/build/player_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/carrot/Vision_Arena_2025/build/player_pkg

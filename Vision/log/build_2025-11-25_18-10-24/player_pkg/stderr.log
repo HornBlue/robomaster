@@ -1,0 +1,7 @@
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:[m[K In member function ‘[01m[Kvoid TestNode::callback_camera(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:218:48:[m[K [01;31m[Kerror: [m[K‘[01m[KsortRectanglePoints[m[K’ was not declared in this scope
+  218 |         std::vector<cv::Point2f> rect_points = [01;31m[KsortRectanglePoints[m[K(approx);
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/TestNode.dir/build.make:76：CMakeFiles/TestNode.dir/src/test.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/TestNode.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2
