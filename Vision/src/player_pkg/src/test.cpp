@@ -270,67 +270,152 @@ void TestNode::detectGreenRectangles(const Mat& hsv, Mat& result_image) {
 }
 
 void TestNode::detectArmorPlates(const Mat& hsv, Mat& result_image) {
-  // 装甲板通常为蓝色或特定颜色
-  Mat armor_mask1, armor_mask2;
-  
-  // 蓝色范围1
-  cv::inRange(hsv, cv::Scalar(100, 120, 70), cv::Scalar(130, 255, 255), armor_mask1);
-  // 蓝色范围2（可选）
-  cv::inRange(hsv, cv::Scalar(90, 100, 60), cv::Scalar(120, 255, 255), armor_mask2);
-  
-  Mat armor_mask = armor_mask1 | armor_mask2;
+  // 检测红色灯条 - 装甲板的灯条通常是红色
+  Mat red_mask1, red_mask2, red_mask;
+  cv::inRange(hsv, cv::Scalar(0, 120, 70), cv::Scalar(10, 255, 255), red_mask1);
+  cv::inRange(hsv, cv::Scalar(170, 120, 70), cv::Scalar(180, 255, 255), red_mask2);
+  red_mask = red_mask1 | red_mask2;
 
-  // 形态学操作
-  Mat kernel = getStructuringElement(MORPH_RECT, Size(5, 5));
-  morphologyEx(armor_mask, armor_mask, MORPH_CLOSE, kernel);
+  // 形态学操作，连接相邻区域
+  Mat kernel = getStructuringElement(MORPH_RECT, Size(3, 3));
+  morphologyEx(red_mask, red_mask, MORPH_CLOSE, kernel);
+  morphologyEx(red_mask, red_mask, MORPH_OPEN, kernel);
 
   // 找轮廓
   vector<vector<Point>> contours;
-  findContours(armor_mask, contours, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
+  findContours(red_mask, contours, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
 
+  vector<RotatedRect> light_bars;
+  
+  // 筛选灯条
   for (const auto& contour : contours) {
     double area = contourArea(contour);
-    if (area < 800) continue;
+    if (area < 300) continue;
 
-    // 获取最小外接矩形
-    RotatedRect rotated_rect = minAreaRect(contour);
-    Point2f vertices[4];
-    rotated_rect.points(vertices);
+    RotatedRect light_rect = minAreaRect(contour);
+    Size2f rect_size = light_rect.size;
+    float width = min(rect_size.width, rect_size.height);
+    float height = max(rect_size.width, rect_size.height);
+    float aspect_ratio = height / width;
 
-    double width = rotated_rect.size.width;
-    double height = rotated_rect.size.height;
-    double aspect_ratio = max(width, height) / min(width, height);
-
-    // 装甲板通常有特定的长宽比
-    if (aspect_ratio > 1.5 && aspect_ratio < 4.0) {
-      // 绘制装甲板
+    // 灯条通常有较大的长宽比
+    if (aspect_ratio > 2.0 && height > 30) {
+      light_bars.push_back(light_rect);
+      
+      // 绘制检测到的灯条
+      Point2f vertices[4];
+      light_rect.points(vertices);
       for (int i = 0; i < 4; i++) {
-        line(result_image, vertices[i], vertices[(i + 1) % 4], Scalar(255, 0, 0), 3);
+        line(result_image, vertices[i], vertices[(i + 1) % 4], Scalar(0, 255, 255), 2);
       }
+    }
+  }
 
-      // 转换为Point2f并排序
-      vector<Point2f> armor_points(vertices, vertices + 4);
-      vector<Point2f> sorted_armor = sortRectanglePoints(armor_points);
-
-      // 绘制角点并添加到发布列表
-      for (int i = 0; i < 4; i++) {
-        circle(result_image, sorted_armor[i], 6, Scalar(255, 0, 0), -1);
-        //Point_V.push_back(sorted_armor[i]);
+  // 配对灯条形成装甲板
+  for (size_t i = 0; i < light_bars.size(); i++) {
+    for (size_t j = i + 1; j < light_bars.size(); j++) {
+      Point2f center1 = light_bars[i].center;
+      Point2f center2 = light_bars[j].center;
+      
+      float distance = norm(center1 - center2);
+      float angle_diff = abs(light_bars[i].angle - light_bars[j].angle);
+      
+      // 配对条件：距离适中，角度相似
+      if (distance > 50 && distance < 300 && angle_diff < 20) {
+        // 计算装甲板的四个角点
+        Point2f left_center, right_center;
+        if (center1.x < center2.x) {
+          left_center = center1;
+          right_center = center2;
+        } else {
+          left_center = center2;
+          right_center = center1;
+        }
         
-        // 标注角点序号
-        string text = "A" + to_string(i + 1);
-        putText(result_image, text, 
-                Point(sorted_armor[i].x + 15, sorted_armor[i].y - 15),
-                FONT_HERSHEY_SIMPLEX, 0.6, Scalar(255, 0, 0), 2);
+        // 计算装甲板的高度（取两个灯条高度的平均值）
+        float avg_height = (light_bars[i].size.height + light_bars[j].size.height) / 2.0f;
+        float width = distance;
+        
+        // 计算装甲板的四个角点（左下，右下，右上，左上）
+        vector<Point2f> armor_points(4);
+        armor_points[0] = Point2f(left_center.x - 5, left_center.y + avg_height / 2);  // 左下
+        armor_points[1] = Point2f(right_center.x + 5, right_center.y + avg_height / 2); // 右下
+        armor_points[2] = Point2f(right_center.x + 5, right_center.y - avg_height / 2); // 右上
+        armor_points[3] = Point2f(left_center.x - 5, left_center.y - avg_height / 2);   // 左上
+        
+        // 检测数字区域（装甲板中间区域）
+        Rect number_roi(left_center.x + 10, left_center.y - avg_height / 2 + 10, 
+                        right_center.x - left_center.x - 20, avg_height - 20);
+        
+        // 确保ROI在图像范围内
+        if (number_roi.x >= 0 && number_roi.y >= 0 && 
+            number_roi.x + number_roi.width <= result_image.cols &&
+            number_roi.y + number_roi.height <= result_image.rows) {
+          
+          // 简单的数字存在检测：检查中间区域是否有足够的非黑色像素
+          Mat number_region = result_image(number_roi);
+          Mat gray_region;
+          cvtColor(number_region, gray_region, COLOR_BGR2GRAY);
+          
+          // 阈值处理，找到亮色区域（数字通常是白色或亮色）
+          Mat number_mask;
+          threshold(gray_region, number_mask, 100, 255, THRESH_BINARY);
+          
+          double non_zero_ratio = (double)countNonZero(number_mask) / (number_mask.rows * number_mask.cols);
+          
+          // 如果中间区域有足够的亮色像素，认为有数字
+          if (non_zero_ratio > 0.1) {
+            // 绘制装甲板
+            for (int k = 0; k < 4; k++) {
+              line(result_image, armor_points[k], armor_points[(k + 1) % 4], 
+                   Scalar(255, 0, 0), 3);
+            }
+            
+            // 绘制角点并标注
+            vector<Scalar> point_colors = {
+                Scalar(255, 0, 0),    // 蓝色 - 左下 (1)
+                Scalar(0, 255, 0),    // 绿色 - 右下 (2)
+                Scalar(0, 255, 255),  // 黄色 - 右上 (3)
+                Scalar(255, 0, 255)   // 紫色 - 左上 (4)
+            };
+            
+            for (int k = 0; k < 4; k++) {
+              circle(result_image, armor_points[k], 6, point_colors[k], -1);
+              
+              // 标注角点序号
+              string text = to_string(k + 1);
+              putText(result_image, text, 
+                      Point(armor_points[k].x + 10, armor_points[k].y - 10),
+                      FONT_HERSHEY_SIMPLEX, 0.6, Scalar(255, 255, 255), 3);
+              putText(result_image, text, 
+                      Point(armor_points[k].x + 10, armor_points[k].y - 10),
+                      FONT_HERSHEY_SIMPLEX, 0.6, point_colors[k], 2);
+            }
+            
+            // 计算装甲板中心
+            Point2f armor_center(0, 0);
+            for (const auto& p : armor_points) {
+              armor_center += p;
+            }
+            armor_center.x /= 4;
+            armor_center.y /= 4;
+            
+            // 标注装甲板信息
+            string info = "Armor Plate";
+            putText(result_image, info, 
+                    Point(armor_center.x - 30, armor_center.y - 20),
+                    FONT_HERSHEY_SIMPLEX, 0.6, Scalar(255, 255, 255), 2);
+            
+            // 添加到检测对象列表
+            DetectedObject armor_obj;
+            armor_obj.type = "armor";
+            armor_obj.corners = armor_points;
+            detected_objects_.push_back(armor_obj);
+            
+            RCLCPP_INFO(this->get_logger(), "Found armor plate with number");
+          }
+        }
       }
-
-      // 标注装甲板信息
-      Point center = rotated_rect.center;
-      string info = "Armor " + to_string((int)aspect_ratio);
-      putText(result_image, info, Point(center.x - 30, center.y - 20),
-              FONT_HERSHEY_SIMPLEX, 0.6, Scalar(255, 0, 0), 2);
-
-      RCLCPP_INFO(this->get_logger(), "Found armor plate: aspect=%.2f", aspect_ratio);
     }
   }
 }

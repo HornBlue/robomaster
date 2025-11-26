@@ -1,7 +1,0 @@
-[01m[K/home/carrot/Vision_Arena_2025/src/player_pkg/src/test.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Kreferee_pkg/msg/multi_object.hpp: 没有那个文件或目录
-   10 | #include [01;31m[K<referee_pkg/msg/multi_object.hpp>[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/TestNode.dir/build.make:76：CMakeFiles/TestNode.dir/src/test.cpp.o] 错误 1
-gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/TestNode.dir/all] 错误 2
-gmake: *** [Makefile:146：all] 错误 2

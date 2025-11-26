@@ -1,0 +1,2 @@
+Invoking command in '/home/carrot/robomaster/Vision/build/player_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/carrot/robomaster/Vision/src/player_pkg -DCMAKE_INSTALL_PREFIX=/home/carrot/robomaster/Vision/install/player_pkg
+Invoked command in '/home/carrot/robomaster/Vision/build/player_pkg' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/carrot/robomaster/Vision/src/player_pkg -DCMAKE_INSTALL_PREFIX=/home/carrot/robomaster/Vision/install/player_pkg
