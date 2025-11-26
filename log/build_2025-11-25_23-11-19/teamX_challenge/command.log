@@ -1,0 +1,2 @@
+Invoking command in '/home/carrot/robomaster/build/teamX_challenge': /usr/bin/cmake /home/carrot/robomaster/teamX_challenge -DCMAKE_INSTALL_PREFIX=/home/carrot/robomaster/install/teamX_challenge
+Invoked command in '/home/carrot/robomaster/build/teamX_challenge' returned '1': /usr/bin/cmake /home/carrot/robomaster/teamX_challenge -DCMAKE_INSTALL_PREFIX=/home/carrot/robomaster/install/teamX_challenge

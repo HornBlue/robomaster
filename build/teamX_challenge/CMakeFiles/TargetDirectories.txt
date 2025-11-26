@@ -1,0 +1,12 @@
+/home/carrot/robomaster/build/teamX_challenge/CMakeFiles/uninstall.dir
+/home/carrot/robomaster/build/teamX_challenge/CMakeFiles/teamX_challenge_uninstall.dir
+/home/carrot/robomaster/build/teamX_challenge/CMakeFiles/vision_node.dir
+/home/carrot/robomaster/build/teamX_challenge/CMakeFiles/decision_node.dir
+/home/carrot/robomaster/build/teamX_challenge/CMakeFiles/shooter_node.dir
+/home/carrot/robomaster/build/teamX_challenge/CMakeFiles/test.dir
+/home/carrot/robomaster/build/teamX_challenge/CMakeFiles/edit_cache.dir
+/home/carrot/robomaster/build/teamX_challenge/CMakeFiles/rebuild_cache.dir
+/home/carrot/robomaster/build/teamX_challenge/CMakeFiles/list_install_components.dir
+/home/carrot/robomaster/build/teamX_challenge/CMakeFiles/install.dir
+/home/carrot/robomaster/build/teamX_challenge/CMakeFiles/install/local.dir
+/home/carrot/robomaster/build/teamX_challenge/CMakeFiles/install/strip.dir

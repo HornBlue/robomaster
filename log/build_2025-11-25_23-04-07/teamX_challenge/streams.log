@@ -1,0 +1,34 @@
+[0.016s] Invoking command in '/home/carrot/robomaster/build/teamX_challenge': /usr/bin/cmake /home/carrot/robomaster/teamX_challenge -DCMAKE_INSTALL_PREFIX=/home/carrot/robomaster/install/teamX_challenge
+[0.029s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.167s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.200s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.203s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.208s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.221s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.237s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.267s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.268s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.399s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.485s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.510s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.516s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[0.562s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[0.562s]   By not providing "Findopencv2.cmake" in CMAKE_MODULE_PATH this project has
+[0.562s]   asked CMake to find a package configuration file provided by "opencv2", but
+[0.562s]   CMake did not find one.
+[0.562s] 
+[0.562s]   Could not find a package configuration file provided by "opencv2" with any
+[0.562s]   of the following names:
+[0.562s] 
+[0.562s]     opencv2Config.cmake
+[0.562s]     opencv2-config.cmake
+[0.562s] 
+[0.563s]   Add the installation prefix of "opencv2" to CMAKE_PREFIX_PATH or set
+[0.563s]   "opencv2_DIR" to a directory containing one of the above files.  If
+[0.563s]   "opencv2" provides a separate development package or SDK, be sure it has
+[0.563s]   been installed.
+[0.563s] 
+[0.563s] [0m
+[0.563s] -- Configuring incomplete, errors occurred!
+[0.563s] See also "/home/carrot/robomaster/build/teamX_challenge/CMakeFiles/CMakeOutput.log".
+[0.579s] Invoked command in '/home/carrot/robomaster/build/teamX_challenge' returned '1': /usr/bin/cmake /home/carrot/robomaster/teamX_challenge -DCMAKE_INSTALL_PREFIX=/home/carrot/robomaster/install/teamX_challenge

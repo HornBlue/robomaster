@@ -1,0 +1,43 @@
+[0.014s] Invoking command in '/home/carrot/robomaster/build/teamX_challenge': /usr/bin/cmake /home/carrot/robomaster/teamX_challenge -DCMAKE_INSTALL_PREFIX=/home/carrot/robomaster/install/teamX_challenge
+[0.040s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.165s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.193s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.194s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.198s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.212s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.223s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.261s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.264s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.357s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.413s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.437s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.441s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[0.488s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.542s] Error parsing '/home/carrot/robomaster/teamX_challenge/package.xml':
+[0.585s] Traceback (most recent call last):
+[0.586s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.586s]     main()
+[0.587s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.587s]     raise e
+[0.587s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.587s]     package = parse_package_string(
+[0.587s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[0.588s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[0.588s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/carrot/robomaster/teamX_challenge/package.xml':
+[0.588s] Error(s):
+[0.588s] - The manifest of package "teamX_challenge" (with format version 3) must not contain the following tags: executable, build_type
+[0.601s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.602s]   execute_process(/usr/bin/python3
+[0.602s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.602s]   /home/carrot/robomaster/teamX_challenge/package.xml
+[0.602s]   /home/carrot/robomaster/build/teamX_challenge/ament_cmake_core/package.cmake)
+[0.602s]   returned error code 1
+[0.602s] Call Stack (most recent call first):
+[0.602s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.602s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.602s]   CMakeLists.txt:48 (ament_lint_auto_find_test_dependencies)
+[0.602s] 
+[0.602s] [0m
+[0.607s] -- Configuring incomplete, errors occurred!
+[0.607s] See also "/home/carrot/robomaster/build/teamX_challenge/CMakeFiles/CMakeOutput.log".
+[0.615s] Invoked command in '/home/carrot/robomaster/build/teamX_challenge' returned '1': /usr/bin/cmake /home/carrot/robomaster/teamX_challenge -DCMAKE_INSTALL_PREFIX=/home/carrot/robomaster/install/teamX_challenge

@@ -1,0 +1,4 @@
+source;share/teamX_challenge/local_setup.bash
+source;share/teamX_challenge/local_setup.dsv
+source;share/teamX_challenge/local_setup.sh
+source;share/teamX_challenge/local_setup.zsh

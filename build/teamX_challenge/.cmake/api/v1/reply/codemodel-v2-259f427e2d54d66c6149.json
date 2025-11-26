@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-a841cb59eb83805aaa9f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "teamX_challenge",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "decision_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-decision_node-2ebd88be4c026d2a1446.json",
+					"name" : "decision_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "shooter_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-shooter_node-168fb7dfa67e554e1b46.json",
+					"name" : "shooter_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "teamX_challenge_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-teamX_challenge_uninstall-8f99bd7c571eac5060ea.json",
+					"name" : "teamX_challenge_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-4000f3010e19e3f6285e.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_node-8b3b6bbeee3b7b45d4b9.json",
+					"name" : "vision_node",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/carrot/robomaster/build/teamX_challenge",
+		"source" : "/home/carrot/robomaster/teamX_challenge"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

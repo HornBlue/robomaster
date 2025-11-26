@@ -1,0 +1,54 @@
+[0.011s] Invoking command in '/home/carrot/robomaster/build/teamX_challenge': /usr/bin/cmake /home/carrot/robomaster/teamX_challenge -DCMAKE_INSTALL_PREFIX=/home/carrot/robomaster/install/teamX_challenge
+[0.190s] -- The C compiler identification is GNU 11.4.0
+[0.284s] -- The CXX compiler identification is GNU 11.4.0
+[0.318s] -- Detecting C compiler ABI info
+[0.466s] -- Detecting C compiler ABI info - done
+[0.475s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.475s] -- Detecting C compile features
+[0.477s] -- Detecting C compile features - done
+[0.482s] -- Detecting CXX compiler ABI info
+[0.601s] -- Detecting CXX compiler ABI info - done
+[0.607s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.607s] -- Detecting CXX compile features
+[0.608s] -- Detecting CXX compile features - done
+[0.620s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.800s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.941s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[1.032s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.045s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.067s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.113s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.148s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.302s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.310s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.522s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.567s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.603s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.618s] -- Looking for pthread.h
+[1.731s] -- Looking for pthread.h - found
+[1.731s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.827s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.829s] -- Found Threads: TRUE  
+[1.906s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.967s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[1.980s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[2.028s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[2.028s]   By not providing "Findopencv2.cmake" in CMAKE_MODULE_PATH this project has
+[2.028s]   asked CMake to find a package configuration file provided by "opencv2", but
+[2.028s]   CMake did not find one.
+[2.028s] 
+[2.028s]   Could not find a package configuration file provided by "opencv2" with any
+[2.028s]   of the following names:
+[2.028s] 
+[2.028s]     opencv2Config.cmake
+[2.028s]     opencv2-config.cmake
+[2.028s] 
+[2.028s]   Add the installation prefix of "opencv2" to CMAKE_PREFIX_PATH or set
+[2.028s]   "opencv2_DIR" to a directory containing one of the above files.  If
+[2.028s]   "opencv2" provides a separate development package or SDK, be sure it has
+[2.028s]   been installed.
+[2.028s] 
+[2.028s] [0m
+[2.028s] -- Configuring incomplete, errors occurred!
+[2.028s] See also "/home/carrot/robomaster/build/teamX_challenge/CMakeFiles/CMakeOutput.log".
+[2.041s] Invoked command in '/home/carrot/robomaster/build/teamX_challenge' returned '1': /usr/bin/cmake /home/carrot/robomaster/teamX_challenge -DCMAKE_INSTALL_PREFIX=/home/carrot/robomaster/install/teamX_challenge

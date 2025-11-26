@@ -1,0 +1,4 @@
+Invoking command in '/home/carrot/robomaster/build/teamX_challenge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/carrot/robomaster/teamX_challenge -DCMAKE_INSTALL_PREFIX=/home/carrot/robomaster/install/teamX_challenge
+Invoked command in '/home/carrot/robomaster/build/teamX_challenge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/carrot/robomaster/teamX_challenge -DCMAKE_INSTALL_PREFIX=/home/carrot/robomaster/install/teamX_challenge
+Invoking command in '/home/carrot/robomaster/build/teamX_challenge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/carrot/robomaster/build/teamX_challenge -- -j2 -l2
+Invoked command in '/home/carrot/robomaster/build/teamX_challenge' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/carrot/robomaster/build/teamX_challenge -- -j2 -l2
