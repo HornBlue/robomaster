@@ -1,0 +1,40 @@
+vision_node:
+  ros__parameters:
+    # 图像处理参数
+    detection_scale: 0.5
+    min_contour_area: 100
+    
+    # 球体检测参数
+    sphere:
+      min_radius: 15
+      max_radius: 200
+      min_area: 500
+      circularity_threshold: 0.7
+    
+    # 颜色阈值参数
+    color_thresholds:
+      red_low1: [0, 120, 70]
+      red_high1: [10, 255, 255]
+      red_low2: [170, 120, 70]
+      red_high2: [180, 255, 255]
+      green_low: [75, 100, 80]
+      green_high: [95, 255, 255]
+    
+    # 矩形检测参数
+    rectangle:
+      min_area: 500
+      epsilon_factor: 0.02
+    
+    # 装甲板检测参数
+    armor:
+      min_distance: 50
+      max_distance: 300
+      max_angle_diff: 20.0
+      min_aspect_ratio: 2.0
+      min_height: 20
+    
+    # 数字识别参数
+    number_recognition:
+      resize_width: 40
+      resize_height: 60
+      peak_threshold: 1.5
