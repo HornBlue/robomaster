@@ -1,4 +1,6 @@
 # README.md
+技术报告：
+  https://www.yuque.com/yuqueyonghujyjcmh/yda9y0/ohbl28cr9pwvssub?singleDoc# 《机甲大师视觉校内赛技术报告》
 vison文件夹是主文件，用vscode打开
 源码位于vision/src/player_pkg/src/rest.cpp（名字与示例一样但经过修改）
 1.使用
