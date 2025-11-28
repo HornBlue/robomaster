@@ -1,6 +1,6 @@
 # README.md
 vison文件夹是主文件，用vscode打开
-
+源码位于vision/src/player_pkg/src/rest.cpp（名字与示例一样但经过修改）
 1.使用
 ros2 launch referee_pkg referee_pkg_launch.xml \
     TeamName:="TEAMENAME" \
