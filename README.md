@@ -2,7 +2,7 @@
 技术报告：  
   https://www.yuque.com/yuqueyonghujyjcmh/yda9y0/ohbl28cr9pwvssub?singleDoc# 《机甲大师视觉校内赛技术报告》  
 teamX_challenge文件夹是主文件，用vscode打开  
-源码位于teamX_challenge/src/player_pkg/src/test.cpp（名字与示例一样但经过修改）  
+源码位于teamX_challenge/src/test.cpp（名字与示例一样但经过修改）  
 1.使用  
 ros2 launch referee_pkg referee_pkg_launch.xml \  
     TeamName:="TEAMENAME" \  
