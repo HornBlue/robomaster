@@ -14,7 +14,6 @@
 #include <std_msgs/msg/header.hpp>
 
 #include "sensor_msgs/msg/image.hpp"
-#include "referee_pkg/msg/race_stage.hpp"  // 添加比赛阶段消息头文件
 
 using namespace std;
 using namespace rclcpp;
@@ -34,11 +33,6 @@ class TestNode : public rclcpp::Node {
         "/camera/image_raw", 10,
         bind(&TestNode::callback_camera, this, std::placeholders::_1));
 
-    // 添加比赛阶段订阅者
-    race_stage_sub_ = this->create_subscription<referee_pkg::msg::RaceStage>(
-        "/referee/race_stage", 10,
-        bind(&TestNode::callback_race_stage, this, std::placeholders::_1));
-
     Target_pub = this->create_publisher<referee_pkg::msg::MultiObject>(
         "/vision/target", 10);
 
@@ -47,9 +41,6 @@ class TestNode : public rclcpp::Node {
     // 性能优化参数
     detection_scale = 0.5;  // 图像缩放因子，提高处理速度
     min_contour_area = 100; // 最小轮廓面积，减少计算量
-    
-    // 初始化比赛阶段
-    current_stage_ = 0;
 
     RCLCPP_INFO(this->get_logger(), "TestNode initialized successfully");
   }
@@ -58,9 +49,6 @@ class TestNode : public rclcpp::Node {
   
  private:
   void callback_camera(sensor_msgs::msg::Image::SharedPtr msg);
-  
-  // 添加比赛阶段回调函数
-  void callback_race_stage(referee_pkg::msg::RaceStage::SharedPtr msg);
   
   // 球体检测
   void detectSpheres(const Mat& hsv, Mat& result_image);
@@ -82,18 +70,11 @@ class TestNode : public rclcpp::Node {
 
   rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr Image_sub;
   rclcpp::Publisher<referee_pkg::msg::MultiObject>::SharedPtr Target_pub;
-  
-  // 添加比赛阶段订阅者
-  rclcpp::Subscription<referee_pkg::msg::RaceStage>::SharedPtr race_stage_sub_;
-  
   //vector<Point2f> Point_V;
   vector<DetectedObject> detected_objects_;  // 替换原来的 Point_V
   // 性能优化参数
   double detection_scale;
   int min_contour_area;
-  
-  // 当前比赛阶段
-  int current_stage_;
 };
 
 int main(int argc, char **argv) {
@@ -103,35 +84,6 @@ int main(int argc, char **argv) {
   rclcpp::spin(node);
   rclcpp::shutdown();
   return 0;
-}
-
-// 添加比赛阶段回调函数实现
-void TestNode::callback_race_stage(referee_pkg::msg::RaceStage::SharedPtr msg) {
-    current_stage_ = msg->stage;
-    RCLCPP_INFO(this->get_logger(), "Received race stage: %d", current_stage_);
-    
-    // 这里可以根据比赛阶段进行相应的处理
-    // 例如：不同阶段启用不同的检测算法
-    switch(current_stage_) {
-        case 1:
-            RCLCPP_INFO(this->get_logger(), "Race Stage 1: Preparation phase");
-            break;
-        case 2:
-            RCLCPP_INFO(this->get_logger(), "Race Stage 2: Start phase");
-            break;
-        case 3:
-            RCLCPP_INFO(this->get_logger(), "Race Stage 3: Main competition phase");
-            break;
-        case 4:
-            RCLCPP_INFO(this->get_logger(), "Race Stage 4: Ending phase");
-            break;
-        case 5:
-            RCLCPP_INFO(this->get_logger(), "Race Stage 5: Finished");
-            break;
-        default:
-            RCLCPP_WARN(this->get_logger(), "Unknown race stage: %d", current_stage_);
-            break;
-    }
 }
 
 vector<Point2f> TestNode::calculateStableSpherePoints(const Point2f &center,
