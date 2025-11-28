@@ -1,57 +1,40 @@
 vision_node:
   ros__parameters:
-    # --- 多颜色配置 ---
-    # 颜色名称可以自定义，如 "red", "blue", "green"
-    # 每种颜色包含HSV范围和一个唯一的ID
-    colors:
-      red:
-        id: 1
-        hue_low1: 0
-        hue_high1: 10
-        hue_low2: 170
-        hue_high2: 180
-        sat_low: 120
-        sat_high: 255
-        val_low: 70
-        val_high: 255
-      blue:
-        id: 2
-        hue_low1: 100
-        hue_high1: 130
-        hue_low2: 0  # 对于非跨0度的颜色，第二个范围可以设为无效值
-        hue_high2: 0
-        sat_low: 120
-        sat_high: 255
-        val_low: 70
-        val_high: 255
-
-    # --- 形态学和过滤参数 ---
-    kernel_size: 5
-    min_circle_area: 500.0
-    min_rect_area: 800.0
-    min_armor_area: 600.0 # 新增：装甲板最小面积
-    circle_circularity: 0.7
-    rect_ratio: 0.8
-    armor_ratio: 1.5 # 新增：装甲板长宽比 (长/宽)
-
-    # --- 其他参数 ---
-    save_path: "share/teamX_challenge/results/"
-
-decision_node:
-  ros__parameters:
-    # --- 排序优先级配置 ---
-    # 颜色优先级: ID数字越小，优先级越高
-    color_priority: [1, 2] # 1(红色) > 2(蓝色)
-    # 类型优先级: 装甲板 > 矩形 > 圆形
-    type_priority: ["ARMOR", "RECTANGLE", "CIRCLE"]
-
-    # --- 弹道解算参数 ---
-    G: 9.8
-    V0: 10.0
-    CAMERA_HEIGHT: 0.5
-    LAUNCH_OFFSET: 0.2
-    # 相机内参 (示例值，需根据实际相机标定)
-    fx: 600.0
-    fy: 600.0
-    cx: 320.0
-    cy: 240.0
+    # 图像处理参数
+    detection_scale: 0.5
+    min_contour_area: 100
+    
+    # 球体检测参数
+    sphere:
+      min_radius: 15
+      max_radius: 200
+      min_area: 500
+      circularity_threshold: 0.7
+    
+    # 颜色阈值参数
+    color_thresholds:
+      red_low1: [0, 120, 70]
+      red_high1: [10, 255, 255]
+      red_low2: [170, 120, 70]
+      red_high2: [180, 255, 255]
+      green_low: [75, 100, 80]
+      green_high: [95, 255, 255]
+    
+    # 矩形检测参数
+    rectangle:
+      min_area: 500
+      epsilon_factor: 0.02
+    
+    # 装甲板检测参数
+    armor:
+      min_distance: 50
+      max_distance: 300
+      max_angle_diff: 20.0
+      min_aspect_ratio: 2.0
+      min_height: 20
+    
+    # 数字识别参数
+    number_recognition:
+      resize_width: 40
+      resize_height: 60
+      peak_threshold: 1.5

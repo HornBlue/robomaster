@@ -1,0 +1,53 @@
+[0.026s] Invoking command in '/home/carrot/robomaster/teamX_challenge/build/player_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/carrot/robomaster/teamX_challenge -DCMAKE_INSTALL_PREFIX=/home/carrot/robomaster/teamX_challenge/install/player_pkg
+[0.425s] -- The C compiler identification is GNU 11.4.0
+[0.814s] -- The CXX compiler identification is GNU 11.4.0
+[0.846s] -- Detecting C compiler ABI info
+[1.095s] -- Detecting C compiler ABI info - done
+[1.149s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.154s] -- Detecting C compile features
+[1.167s] -- Detecting C compile features - done
+[1.196s] -- Detecting CXX compiler ABI info
+[1.581s] -- Detecting CXX compiler ABI info - done
+[1.593s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.593s] -- Detecting CXX compile features
+[1.593s] -- Detecting CXX compile features - done
+[1.605s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.840s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.090s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[2.201s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.209s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.234s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.271s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.327s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.445s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.452s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.743s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.795s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.838s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.858s] -- Looking for pthread.h
+[3.064s] -- Looking for pthread.h - found
+[3.064s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.370s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.374s] -- Found Threads: TRUE  
+[3.614s] -- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[3.804s] -- Found OpenCV: /usr/local (found version "4.13.0") 
+[3.835s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[3.835s]   By not providing "Findpose_msg.cmake" in CMAKE_MODULE_PATH this project has
+[3.835s]   asked CMake to find a package configuration file provided by "pose_msg",
+[3.835s]   but CMake did not find one.
+[3.835s] 
+[3.835s]   Could not find a package configuration file provided by "pose_msg" with any
+[3.835s]   of the following names:
+[3.835s] 
+[3.835s]     pose_msgConfig.cmake
+[3.835s]     pose_msg-config.cmake
+[3.835s] 
+[3.835s]   Add the installation prefix of "pose_msg" to CMAKE_PREFIX_PATH or set
+[3.835s]   "pose_msg_DIR" to a directory containing one of the above files.  If
+[3.835s]   "pose_msg" provides a separate development package or SDK, be sure it has
+[3.835s]   been installed.
+[3.835s] 
+[3.835s] [0m
+[3.835s] -- Configuring incomplete, errors occurred!
+[3.836s] See also "/home/carrot/robomaster/teamX_challenge/build/player_pkg/CMakeFiles/CMakeOutput.log".
+[3.871s] Invoked command in '/home/carrot/robomaster/teamX_challenge/build/player_pkg' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/carrot/robomaster/teamX_challenge -DCMAKE_INSTALL_PREFIX=/home/carrot/robomaster/teamX_challenge/install/player_pkg

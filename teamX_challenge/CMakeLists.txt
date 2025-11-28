@@ -1,51 +1,60 @@
-cmake_minimum_required(VERSION 3.8)
-project(teamX_challenge)
+cmake_minimum_required(VERSION 3.8...3.10)
+project(player_pkg)
 
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic)
-endif()
+# 设置 C++ 标准
+set(CMAKE_CXX_STANDARD 14)
 
+# 查找依赖包
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(sensor_msgs REQUIRED)
-find_package(cv_bridge REQUIRED)
-find_package(geometry_msgs REQUIRED)
-find_package(image_transport REQUIRED)
-find_package(OpenCV REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(gazebo_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED) 
+find_package(OpenCV REQUIRED)
+find_package(pose_msg REQUIRED)
+find_package(cv_bridge REQUIRED)
+find_package(referee_pkg REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
-# 视觉节点
-add_executable(vision_node src/vision_node.cpp)
-ament_target_dependencies(vision_node
-  rclcpp sensor_msgs cv_bridge geometry_msgs image_transport std_msgs
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+    add_compile_options(-Wno-deprecated-declarations)
+endif()
+
+add_executable(TestNode src/test.cpp)
+ament_target_dependencies(TestNode
+  rclcpp
+  std_msgs
+  OpenCV 
+  geometry_msgs
+  cv_bridge
+  pose_msg
+  referee_pkg
 )
-target_link_libraries(vision_node ${OpenCV_LIBS})
+# 链接OpenCV库
+target_link_libraries(TestNode ${OpenCV_LIBS})
 
-# 决策节点 (新增)
-add_executable(decision_node src/decision_node.cpp)
-ament_target_dependencies(decision_node
-  rclcpp geometry_msgs std_msgs
-)
+# 为Vision_test添加消息类型支持（新方法）
+target_link_libraries(TestNode ${typesupport_target})
 
-# 打击节点
-add_executable(shooter_node src/shooter_node.cpp)
-ament_target_dependencies(shooter_node rclcpp geometry_msgs)
-
-# 安装所有节点
-install(TARGETS
-  vision_node decision_node shooter_node
+# 安装Vision_test
+install(TARGETS TestNode
   DESTINATION lib/${PROJECT_NAME}
 )
 
-# 安装launch和config文件
+# 安装launch文件
 install(DIRECTORY
-  launch config results
+  launch
   DESTINATION share/${PROJECT_NAME}/
 )
 
-if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  ament_lint_auto_find_test_dependencies()
-endif()
+# 安装config文件
+install(DIRECTORY
+  config
+  DESTINATION share/${PROJECT_NAME}/
+)
+
+# 包含OpenCV头文件
+include_directories(${OpenCV_INCLUDE_DIRS})
+
 
 ament_package()
